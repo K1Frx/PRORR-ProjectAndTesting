@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PRORR": {
+      "commandName": "Project",
+      "commandLineArgs": "4 example/task example/config"
+    }
+  }
+}
