@@ -14,6 +14,8 @@ namespace PRORR.Implementation
 
             this.mutationRate = mutationRate;
             this.randomGenerator = randomGenerator;
+            this.mean = mean;
+            this.stdDev = stdDev;
         }
 
         public float GetMutationRate(int iteration)

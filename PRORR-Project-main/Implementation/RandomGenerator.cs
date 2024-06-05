@@ -32,12 +32,12 @@ namespace PRORR.Implementation
 
         public int NextWeighted(float[] weights)
         {
-            float totalWeight = weights.Sum();
-            float randomValue = (float)random.NextDouble() * totalWeight;
+            decimal totalWeight = (decimal)weights.Sum();
+            decimal randomValue = (decimal)random.NextDouble() * totalWeight;
 
             for (int i = 0; i < weights.Length; i++)
             {
-                randomValue -= weights[i];
+                randomValue -= (decimal)weights[i];
                 if (randomValue <= 0)
                 {
                     return i;
